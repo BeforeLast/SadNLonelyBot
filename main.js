@@ -2,6 +2,7 @@ const fs = require('fs');
 
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const wish = fs.readFileSync('./goodluck.txt','utf-8');
 
 // Variables
 var textjokes = ["Why do programmers always mix up Christmas and Halloween?\nBecause Dec 25 is Oct 31.",
@@ -42,7 +43,19 @@ client.on('message', msg => {
         } else if (msg.content.toLowerCase() === 'help') {
             if (isFriend(msg.author.id)) {
                 msg.author
-                    .send("What do you want?\n1. Give me something funny\n2. Ban someone in discord server\n3. About\n4. Bye")
+                    .send("What do you want?\n1. Give me something funny\n2. Ban someone in discord server\n3. Wish me luck\n4. About\n5. Bye")
+                    .then(console.log)
+                    .catch(console.error)
+            } else {
+                msg.author
+                    .send("Leave me alone!")
+                    .then(console.log)
+                    .catch(console.error)
+            }
+        } else if (msg.content.toLowerCase() === 'wish me luck') {
+            if (isFriend(msg.author.id)) {
+                msg.author
+                    .send(wish)
                     .then(console.log)
                     .catch(console.error)
             } else {
@@ -111,7 +124,7 @@ client.on('message', msg => {
             
         } else {
             msg.author
-                .send('Hi! Thanks for talking to me. It\'s been a long time since someone talked to me.. :sob:\nI was made not long ago but I was abandoned after a few changes..\nMy creator is a really mean person.. :cry:\n Recently I have been updated to version 1.1! But no one congratulates me.. :cry:\n Do you want to be my friend?\n1. Yes\n2. No')
+                .send('Hi! Thanks for talking to me. It\'s been a long time since someone talked to me.. :sob:\nI was made not long ago but I was abandoned after a few changes..\nMy creator is a really mean person.. :cry:\n Recently I have been updated to version 1.1.1! But no one congratulates me.. :cry:\n Do you want to be my friend?\n1. Yes\n2. No')
                 .then(console.log)
                 .catch(console.error);
         }

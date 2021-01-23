@@ -1,9 +1,9 @@
-SAD AND LONELY BOT v1.2
+SAD AND LONELY BOT v1.3
 
 Hello, this is sad and lonely bot. A simple discord robot just to waste your time.
 
 Current Change :
--Removed wish me luck command option
+-Added i need a flag command
 
 Previous Change :
--Added new command to wish you luck
+-Removed wish me luck command option

@@ -43,7 +43,7 @@ client.on('message', msg => {
         } else if (msg.content.toLowerCase() === 'help') {
             if (isFriend(msg.author.id)) {
                 msg.author
-                    .send("What do you want?\n1. Give me something funny\n2. Ban someone in discord server\n3. Wish me luck\n4. About\n5. Bye")
+                    .send("What do you want?\n1. Give me something funny\n2. Ban someone in discord server\n3. About\n4. Bye")
                     .then(console.log)
                     .catch(console.error)
             } else {
@@ -124,7 +124,7 @@ client.on('message', msg => {
             
         } else {
             msg.author
-                .send('Hi! Thanks for talking to me. It\'s been a long time since someone talked to me.. :sob:\nI was made not long ago but I was abandoned after a few changes..\nMy creator is a really mean person.. :cry:\n Recently I have been updated to version 1.1.1! But no one congratulates me.. :cry:\n Do you want to be my friend?\n1. Yes\n2. No')
+                .send('Hi! Thanks for talking to me. It\'s been a long time since someone talked to me.. :sob:\nI was made not long ago but I was abandoned after a few changes..\nMy creator is a really mean person.. :cry:\nRecently I have been updated to version 1.2!\n...\nI feel like my creator has forgotten about something..\nAnyway, do you want to be my friend?\n1. Yes\n2. No')
                 .then(console.log)
                 .catch(console.error);
         }

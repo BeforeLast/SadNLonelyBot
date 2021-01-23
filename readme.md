@@ -1,10 +1,9 @@
-SAD AND LONELY BOT v1.1.1
+SAD AND LONELY BOT v1.2
 
 Hello, this is sad and lonely bot. A simple discord robot just to waste your time.
 
 Current Change :
--Added new command to wish you luck
+-Removed wish me luck command option
 
 Previous Change :
--Added "friendlist" for bot to check whether someone is in "friendlist" or not
--Certain command can only be used if the person dm the bot is on the bot "friendlist"
+-Added new command to wish you luck
